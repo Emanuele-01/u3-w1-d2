@@ -16,7 +16,7 @@ class AllTheBooks extends Component {
                         <Card.Title><strong>{param.title}</strong></Card.Title>
                         <Card.Text className="mt-auto fs-4">{param.category}</Card.Text>
                         <Card.Text className="mt-auto">{param.asin}</Card.Text>
-                        <Button className="mt-auto" variant="danger">{param.price}€</Button>
+                        <Button className="mt-auto" variant="danger">{param.price} €</Button>
                     </Card.Body>
                 </Card>
             </Col>
