@@ -7,13 +7,13 @@ class AllTheBooks extends Component {
     return (
         <Row className="justify-content-center mt-4">
             {Books.map((param) => (
-            <Col xs={2} className="mt-4">
+            <Col xs={3} className="mt-4">
                 <Card className="h-100" key={param.asin}>
-                    <Card.Img className="Carta" variant="top" src={param.img} alt={param.title} />
-                    <Card.Body>
+                    <Card.Img className="h-50" variant="top" src={param.img} alt={param.title} />
+                    <Card.Body className="d-flex flex-column">
                         <Card.Title>{param.title}</Card.Title>
-                        <Card.Text className="mt-3">{param.category}</Card.Text>
-                        <Card.Text className="mt-3">{param.asin}</Card.Text>
+                        <Card.Text className="mt-2">{param.category}</Card.Text>
+                        <Card.Text className="mt-2">{param.asin}</Card.Text>
                         <Button className="mt-auto" variant="danger">{param.price}</Button>
                     </Card.Body>
                 </Card>
